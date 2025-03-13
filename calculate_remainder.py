@@ -1,7 +1,7 @@
 # START
 # Get input from the user
-    # Store first number
-    # Store second number
+num1 = float(input("First Number: "))
+num2 = float(input("Second Number: "))
 # Compute the remainder
 # Display the result
 # END
