@@ -1,8 +1,11 @@
 #START
 # Initialize an empty list to store numbers
+numbers = []
 # Loop indefinitely:
-  #Try:
-    #Ask the user to enter a number
+while True:
+    try:
+        # Get input from user
+        num = int(input("Enter a number: "))
     #Convert input to an integer
     # Add the number to the list
   # Except:

@@ -1,5 +1,6 @@
 #START
 # Initialize a variable to store the lowest number, set it to None
+lowest_number = None
 # Loop indefinitely:
   # Try:
     # Ask the user to enter a number
