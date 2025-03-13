@@ -1,21 +1,24 @@
 # START
 
-# Initialize a set to track unique numbers
+# Initialize a set
 entered_numbers = set()
 
 # Keep asking for input until an invalid entry is detected
 while True:
     try:
-        n = int(input("Enter num: "))
+        # Get user input
+        num = int(input("Enter a number: "))
 
-        if n in nums:
+        # Check if the number is already in the set
+        if num in entered_numbers:
             print("Duplicate")
         else:
             print("Unique")
-            nums.add(n)
+            entered_numbers.add(num)
 
     except ValueError:
         print("Invalid input. Stopping program.")
         break
 
 # END
+

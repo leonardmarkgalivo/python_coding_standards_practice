@@ -16,8 +16,9 @@ while True:
         print("Invalid input. Stopping program.")
         break
 
-# Display the lowest number if any valid number was entered
+# Display the lowest number
 if lowest_number is not None:
     print("The lowest number entered is:", lowest_number)
 
 # END
+

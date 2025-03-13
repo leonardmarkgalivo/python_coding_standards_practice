@@ -1,20 +1,24 @@
-#START
+# START
+
 # Initialize an empty list to store numbers
 numbers = []
-# Loop indefinitely:
+
 while True:
     try:
         # Get input from user
         num = int(input("Enter a number: "))
-    #Convert input to an integer
-    # Add the number to the list
-  # Except:
-    except:
-        print("Invalid")
+
+        # Add the number to the list
+        numbers.append(num)
+
+    except ValueError:
+        print("Invalid input. Stopping program.")
         break
-    # If the input is invalid, break the loop
-# Sort the list in ascending order
-# Display
-nums.sort()
-print("Sorted nums:", nums)
-#END
+
+# Sort the numbers in ascending order
+numbers.sort()
+
+# Display the sorted numbers
+print("Numbers in ascending order:", numbers)
+
+# END

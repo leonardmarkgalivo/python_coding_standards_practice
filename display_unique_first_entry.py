@@ -1,16 +1,19 @@
 # START
-# Initialize an empty list to store user input
+
+# Initialize
 numbers = []
 seen = set()
 
 # Get 10 numbers from the user
 for i in range(10):
-    n = int(input("Enter num: "))
-    # Add the number to the list only if it's the first occurrence
-    if n not in seen:
-        nums.append(n)
-        seen.add(n)
+    num = int(input(f"Enter number {i + 1}: "))
 
-print("Numbers:", nums)
-# Display
+    # Add the number to the list only if its first occurrence
+    if num not in seen:
+        numbers.append(num)
+        seen.add(num)
+
+# Display the numbers
+print("Numbers (first entry only for duplicates):", numbers)
+
 # END

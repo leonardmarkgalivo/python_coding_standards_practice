@@ -1,19 +1,17 @@
 # START
 
-# Initialize an empty list to store user input
+# Initialize
 numbers = []
-seen = set()
 
 # Get 10 numbers from the user
 for i in range(10):
     num = int(input(f"Enter number {i + 1}: "))
+    numbers.append(num)
 
-    # Add the number to the list only if it's the first occurrence
-    if num not in seen:
-        numbers.append(num)
-        seen.add(num)
+# Find and display unique numbers
+unique_numbers = [num for num in numbers if numbers.count(num) == 1]
 
-# Display the numbers
-print("Numbers (first entry only for duplicates):", numbers)
+print("Numbers without duplicates:", unique_numbers)
 
 # END
+
