@@ -4,6 +4,13 @@ numbers = []
 seen = set()
 
 # Get 10 numbers from the user
-# Add the number to the list only if it's the first occurrence
+for i in range(10):
+    n = int(input("Enter num: "))
+    # Add the number to the list only if it's the first occurrence
+    if n not in seen:
+        nums.append(n)
+        seen.add(n)
+
+print("Numbers:", nums)
 # Display
 # END

@@ -1,12 +1,23 @@
-#START
-# Initialize a variable to store the lowest number, set it to None
+# START
+
+# Initialize lowest number as None
 lowest_number = None
-# Loop indefinitely:
-  # Try:
-    # Ask the user to enter a number
-    # Convert input to an integer
-    # If the lowest number is None or the new number is lower, update the lowest number
-  # Except:
-    # If the input is invalid, break the loop
-# Display the lowest number entered
-#END
+
+while True:
+    try:
+        # Get input from user
+        num = int(input("Enter a number: "))
+
+        # Update the lowest number
+        if lowest_number is None or num < lowest_number:
+            lowest_number = num
+
+    except ValueError:
+        print("Invalid input. Stopping program.")
+        break
+
+# Display the lowest number if any valid number was entered
+if lowest_number is not None:
+    print("The lowest number entered is:", lowest_number)
+
+# END
