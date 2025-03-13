@@ -1,7 +1,8 @@
-#START
-#Initialize an empty list to store numbers
+# START
+
+# Initialize an empty list to store numbers
 numbers = []
-#Loop indefinitely:
+
 while True:
     try:
         # Get input from user
@@ -10,6 +11,12 @@ while True:
     except ValueError:
         print("Invalid input. Stopping program.")
         break
-#Sort the list in descending order
-#Display the sorted list
-#END
+
+# Sort and display numbers in descending order
+if numbers:
+    numbers.sort(reverse=True)
+    print("Numbers from highest to lowest:", numbers)
+else:
+    print("No numbers entered.")
+
+# END

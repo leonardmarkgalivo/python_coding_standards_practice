@@ -1,14 +1,22 @@
-#START
-#Initialize an empty list to store numbers
+# START
+
+# Initialize an empty list to store numbers
 numbers = []
-# Loop indefinitely:
+
 while True:
     try:
-        numbers.append(int(input("Enter num: ")))
-    except:
-        print("Invalid")
+        # Get input from user
+        num = int(input("Enter a number: "))
+        numbers.append(num)
+    except ValueError:
+        print("Invalid input. Stopping program.")
         break
-    #If the input is invalid, break the loop
-#Identify the highest number entered
-#Display the highest number
-#END
+
+# Find and display the highest number
+if numbers:
+    highest_number = max(numbers)
+    print("The highest number is:", highest_number)
+else:
+    print("No numbers entered.")
+
+# END

@@ -1,7 +1,8 @@
-#START
-#Initialize an empty list to store numbers
+# START
+
+# Initialize an empty list to store numbers
 numbers = []
-#Loop indefinitely:
+
 while True:
     try:
         # Get input from user
@@ -10,11 +11,13 @@ while True:
     except ValueError:
         print("Invalid input. Stopping program.")
         break
-  # Except:
-    #If the input is invalid, break the loop
-# If there are numbers in the list:
-  #Compute the average
-  # Display the average
-# Else:
-  #Display "No numbers entered."
-#END
+
+# Compute and display average if numbers were entered
+if numbers:
+    average = sum(numbers) / len(numbers)
+    print("Average of numbers:", average)
+else:
+    print("No numbers entered.")
+
+# END
+
