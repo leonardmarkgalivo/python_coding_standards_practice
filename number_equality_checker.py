@@ -1,14 +1,14 @@
-#START
-#Ask the user to enter number
-num1 = float(input("First Number:"))
+# START
+
+# Ask the user to enter two numbers
+num1 = float(input("First Number: "))
 num2 = float(input("Second Number: "))
 
-#Ask the user to enter number
-#Compare the two numbers:
-   #If num1 is equal to num2, "Equal".
-   #Otherwise, print "Not Equal".
+# Compare the two numbers
 if num1 == num2:
     print("Equal")
 else:
     print("Not Equal")
-#END
+
+# END
+

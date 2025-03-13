@@ -1,12 +1,14 @@
-#START
-#1. Ask the user to enter the first number and store it as num1.
-num1 = float(input("First NUmber: "))
-num2 = float(input("Second NUmber: "))
+# START
 
-#2. Ask the user to enter the second number and store it as num2.
-#3. Add num1 and num2
-sum = num1 + num2
+# Ask the user to enter two numbers
+num1 = float(input("First Number: "))
+num2 = float(input("Second Number: "))
 
-#4. Print the sum
-print("The sum of two numbers is: ", sum)
-#END
+# Add num1 and num2
+total_sum = num1 + num2
+
+# Print the sum
+print("The sum of the two numbers is:", total_sum)
+
+# END
+
