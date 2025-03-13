@@ -1,5 +1,8 @@
 # Ask the user to enter the first number
+num1 = float(input("First Number: "))
+
 #Ask the user to enter the second number
+num2 = float(input("Second NUmber "))
 #Compare the two numbers:
    # If num1 is greater than num2, print bigger
    # If num1 is less than num2, print bigger yung second
