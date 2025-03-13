@@ -1,5 +1,6 @@
 #START
 # Initialize an empty list to store numbers
+numbers = []
 #Loop indefinitely:
   # Try:
     #Ask the user to enter a number
